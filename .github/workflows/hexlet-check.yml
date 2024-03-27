@@ -16,14 +16,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Set environment variable
-        run: echo "KEY=value" >> $GITHUB_ENV
+      - uses: actions/checkout@v2
 
       - name: Hexlet project check
-        uses: hexlet/project-action@v1
+        uses: hexlet/project-action@release
         with:
-          entryPoint: ${{ secrets.ENTRY_POINT }}
-          args: ${{ secrets.ARGS }}
-          project-docker-image: ${{ secrets.PROJECT_DOCKER_IMAGE }}
+          hexlet-id: ${{ secrets.HEXLET_ID }}
