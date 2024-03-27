@@ -21,4 +21,6 @@ jobs:
       - name: Hexlet project check
         uses: hexlet/project-action@v1
         with:
-          hexlet-id: ${{ secrets.HEXLET_ID }}
+          entryPoint: ${{ secrets.ENTRY_POINT }}
+          args: ${{ secrets.ARGS }}
+          project-docker-image: ${{ secrets.PROJECT_DOCKER_IMAGE }}
