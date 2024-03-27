@@ -2,13 +2,40 @@
 [![Actions Status](https://github.com/lanatsoi/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/lanatsoi/frontend-project-44/actions)
 
 <a href="https://codeclimate.com/github/lanatsoi/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/5522f0a043d49b39a08b/maintainability" /></a>
+**Игры Разума**
 
-https://asciinema.org/a/ShiOjFQXrHm7oWJSHQAvxdU0u
+«Игры разума» — это набор из пяти консольных игр. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново.
 
-https://asciinema.org/a/UyyK2rBWqSHtFRbz4Haj1Lmdn
+**Игра: "Проверка на четность"**
 
-https://asciinema.org/a/EfkYqDxdlOthRN6qlwVxn2yLK
+Описание игры: Пользователю показывается случайное число. И ему нужно ответить yes, если число чётное, или no — если нечётное. Запуск игры: node bin/brain-even.js
 
-https://asciinema.org/a/WqM8K0l8yg0B44O0cdztQUaDb
+[Прверка на четность.](https://asciinema.org/a/ShiOjFQXrHm7oWJSHQAvxdU0u)
 
-https://asciinema.org/a/NkJ4WsdnfXzQvThXmBR4NGuNi
+**Игра: "Калькулятор"**
+
+Описание игры: Пользователю показывается случайное математическое выражение, например 35 + 16, которое нужно вычислить и записать правильный ответ.
+Запуск: node bin/brain-calc.js
+
+[Калькулятор.](https://asciinema.org/a/UyyK2rBWqSHtFRbz4Haj1Lmdn)
+
+**Игра: "НОД"**
+
+Описание игры: Пользователю показывается два случайных числа, например, 25 50. Пользователь должен вычислить и ввести наибольший общий делитель этих чисел.
+Запуск: node bin/brain-gcd.js
+
+[Игра: "НОД".](https://asciinema.org/a/EfkYqDxdlOthRN6qlwVxn2yLK)
+
+**Игра: "Арифметическая прогрессия"**
+
+Описание игры: Пользователю показывается ряд чисел, образующий арифметическую прогрессию, случайное число из этого ряда заменятся двумя точками. Игрок должен определить это число.
+Запуск: node bin/brain-progression.js
+
+[Арифметическая прогрессия.](https://asciinema.org/a/WqM8K0l8yg0B44O0cdztQUaDb)
+
+**Игра: "Простое ли число?"**
+
+Описание игры: Пользователю показывается случайное число. И ему нужно ответить yes, если число является простым, или no — если число не является простым. Простое число — целое положительное число, имеющее ровно два различных натуральных делителя — единицу и самого себя. Например, 7 — простое число, потому что делится без остатка только на 1 и на себя.
+Запуск: node bin/brain-prime.js
+
+[Простое ли число?](https://asciinema.org/a/NkJ4WsdnfXzQvThXmBR4NGuNi)
