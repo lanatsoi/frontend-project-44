@@ -18,7 +18,7 @@ const startGame = (gameDescription, gameQuestAnsw) => {
       correctAnswers += 1;
     } else {
       console.log(
-        `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`
+        `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`,
       );
       console.log(`Let's try again, ${name}!\n`);
       return;
