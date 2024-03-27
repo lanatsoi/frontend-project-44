@@ -18,10 +18,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Create output file
-        run: echo "key=value" >> $GITHUB_ENV
+      - name: Set environment variable
+        run: echo "KEY=value" >> $GITHUB_ENV
 
       - name: Hexlet project check
         uses: hexlet/project-action@v1
         with:
-          hexlet-id: ${{ secrets.HEXLET_ID }}
+          entryPoint: ${{ secrets.ENTRY_POINT }}
+          args: ${{ secrets.ARGS }}
+          project-docker-image: ${{ secrets.PROJECT_DOCKER_IMAGE }}
