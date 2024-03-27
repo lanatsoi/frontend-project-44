@@ -28,7 +28,11 @@ const hideElementArr = (arr) => {
 };
 
 const gameQuestAnsw = () => {
-  const progression = generateProgression();
+  let progression = generateProgression();
+
+  while (progression.length < 5) {
+    progression = generateProgression();
+  }
 
   const { progression: question, hiddenElement } = hideElementArr(progression);
 
