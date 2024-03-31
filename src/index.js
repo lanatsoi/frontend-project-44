@@ -7,8 +7,9 @@ const startGame = (gameDescription, gameQuestAnsw) => {
   console.log(gameDescription);
 
   let correctAnswers = 0;
+  const maxCorrectAnswer = 3;
 
-  while (correctAnswers < 3) {
+  while (correctAnswers < maxCorrectAnswer) {
     const { question, correctAnswer } = gameQuestAnsw();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
