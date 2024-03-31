@@ -14,7 +14,7 @@ const startGame = (gameDescription, gameQuestAnsw) => {
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
-    if (userAnswer.toLowerCase() === correctAnswer) {
+    if (userAnswer === correctAnswer) {
       console.log('Correct!\n');
       correctAnswers += 1;
     } else {
