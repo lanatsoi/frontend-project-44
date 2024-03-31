@@ -21,36 +21,36 @@ ___
 - Установите зависимости проекта командой make install
 - Установите пакет с играми командой npm link
 
-**Игра: "Проверка на четность"**
+## Игра: "Проверка на четность"**
 
 Описание игры: Пользователю показывается случайное число. И ему нужно ответить yes, если число чётное, или no — если нечётное. Запуск игры: node bin/brain-even.js
 
-[Прверка на четность.][![asciicast](https://asciinema.org/a/ShiOjFQXrHm7oWJSHQAvxdU0u.svg)](https://asciinema.org/a/ShiOjFQXrHm7oWJSHQAvxdU0u)
+[![asciicast](https://asciinema.org/a/ShiOjFQXrHm7oWJSHQAvxdU0u.svg)](https://asciinema.org/a/ShiOjFQXrHm7oWJSHQAvxdU0u)
 
-**Игра: "Калькулятор"**
+## **Игра: "Калькулятор"**
 
 Описание игры: Пользователю показывается случайное математическое выражение, например 35 + 16, которое нужно вычислить и записать правильный ответ.
 Запуск: node bin/brain-calc.js
 
-[Калькулятор.][![asciicast](https://asciinema.org/a/UyyK2rBWqSHtFRbz4Haj1Lmdn.svg)](https://asciinema.org/a/UyyK2rBWqSHtFRbz4Haj1Lmdn)
+[![asciicast](https://asciinema.org/a/UyyK2rBWqSHtFRbz4Haj1Lmdn.svg)](https://asciinema.org/a/UyyK2rBWqSHtFRbz4Haj1Lmdn)
 
-**Игра: "НОД"**
+## **Игра: "НОД"**
 
 Описание игры: Пользователю показывается два случайных числа, например, 25 50. Пользователь должен вычислить и ввести наибольший общий делитель этих чисел.
 Запуск: node bin/brain-gcd.js
 
-[Игра: "НОД".][![asciicast](https://asciinema.org/a/EfkYqDxdlOthRN6qlwVxn2yLK.svg)](https://asciinema.org/a/EfkYqDxdlOthRN6qlwVxn2yLK)
+[![asciicast](https://asciinema.org/a/EfkYqDxdlOthRN6qlwVxn2yLK.svg)](https://asciinema.org/a/EfkYqDxdlOthRN6qlwVxn2yLK)
 
-**Игра: "Арифметическая прогрессия"**
+## **Игра: "Арифметическая прогрессия"**
 
 Описание игры: Пользователю показывается ряд чисел, образующий арифметическую прогрессию, случайное число из этого ряда заменятся двумя точками. Игрок должен определить это число.
 Запуск: node bin/brain-progression.js
 
-[Арифметическая прогрессия.][![asciicast](https://asciinema.org/a/WqM8K0l8yg0B44O0cdztQUaDb.svg)](https://asciinema.org/a/WqM8K0l8yg0B44O0cdztQUaDb)
+[![asciicast](https://asciinema.org/a/WqM8K0l8yg0B44O0cdztQUaDb.svg)](https://asciinema.org/a/WqM8K0l8yg0B44O0cdztQUaDb)
 
-**Игра: "Простое ли число?"**
+## **Игра: "Простое ли число?"**
 
 Описание игры: Пользователю показывается случайное число. И ему нужно ответить yes, если число является простым, или no — если число не является простым. Простое число — целое положительное число, имеющее ровно два различных натуральных делителя — единицу и самого себя. Например, 7 — простое число, потому что делится без остатка только на 1 и на себя.
 Запуск: node bin/brain-prime.js
 
-[Простое ли число?][![asciicast](https://asciinema.org/a/NkJ4WsdnfXzQvThXmBR4NGuNi.svg)](https://asciinema.org/a/NkJ4WsdnfXzQvThXmBR4NGuNi)
+[![asciicast](https://asciinema.org/a/NkJ4WsdnfXzQvThXmBR4NGuNi.svg)](https://asciinema.org/a/NkJ4WsdnfXzQvThXmBR4NGuNi)
