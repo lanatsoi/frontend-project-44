@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.1",
-  "description": "[![Actions Status](https://github.com/MostOfLuck/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/MostOfLuck/frontend-project-44/actions)",
+  "description": "Игры разума - набор из 5-ти консольных игр для тренировки мозга и развития логического мышления.",
   "main": "index.js",
   "type": "module",
   "bin": {
