@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-const startGame = (gameDescription, getQuestionAnswer) => {
+const startGame = (gameDescription, createQuestionAnswer) => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name?');
   console.log(`Hello, ${name}!`);
@@ -10,7 +10,7 @@ const startGame = (gameDescription, getQuestionAnswer) => {
   const maxCorrectAnswer = 3;
 
   while (correctAnswers < maxCorrectAnswer) {
-    const { question, correctAnswer } = getQuestionAnswer();
+    const { question, correctAnswer } = createQuestionAnswer();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
