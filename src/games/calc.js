@@ -3,29 +3,34 @@ import getRandomInt from '../getRandom.js';
 
 const gameDescription = 'What is the result of the expression?';
 
-const gameQuestAnsw = () => {
-  const num1 = getRandomInt(1, 100);
-  const num2 = getRandomInt(1, 100);
+const calculateExpression = (num1, num2, operation) => {
+  let result;
+  switch (operation) {
+    case '+':
+      result = num1 + num2;
+      break;
+    case '-':
+      result = num1 - num2;
+      break;
+    case '*':
+      result = num1 * num2;
+      break;
+    default:
+      result = NaN;
+  }
+  return result;
+};
+
+const createQuestionAnswer = () => {
+  const num1 = getRandomInt(1, 10);
+  const num2 = getRandomInt(1, 10);
   const operations = ['+', '-', '*'];
   const operation = operations[getRandomInt(0, operations.length - 1)];
 
   const question = `${num1} ${operation} ${num2}`;
-  let correctAnswer;
+  const correctAnswer = calculateExpression(num1, num2, operation).toString();
 
-  switch (operation) {
-    case '+':
-      correctAnswer = (num1 + num2).toString();
-      break;
-    case '-':
-      correctAnswer = (num1 - num2).toString();
-      break;
-    case '*':
-      correctAnswer = (num1 * num2).toString();
-      break;
-    default:
-      break;
-  }
   return { question, correctAnswer };
 };
 
-export default () => startGame(gameDescription, gameQuestAnsw);
+export default () => startGame(gameDescription, createQuestionAnswer);

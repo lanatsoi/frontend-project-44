@@ -16,7 +16,7 @@ const findNod = (num1, num2) => {
   return a;
 };
 
-const gameQuestAnsw = () => {
+const createQuestionAnswer = () => {
   const num1 = getRandomInt(1, 100);
   const num2 = getRandomInt(1, 100);
 
@@ -26,4 +26,4 @@ const gameQuestAnsw = () => {
   return { question, correctAnswer };
 };
 
-export default () => startGame(gameDescription, gameQuestAnsw);
+export default () => startGame(gameDescription, createQuestionAnswer);

@@ -3,11 +3,7 @@ import getRandomInt from '../getRandom.js';
 
 const gameDescription = 'What number is missing in the progression?';
 
-const generateProgression = () => {
-  const length = getRandomInt(1, 10);
-  const start = getRandomInt(1, 10);
-  const difference = getRandomInt(1, 10);
-
+const generateProgression = (start, difference, length) => {
   const progression = [];
 
   for (let i = 0; i < length; i += 1) {
@@ -27,16 +23,16 @@ const hideElementArr = (arr) => {
   };
 };
 
-const gameQuestAnsw = () => {
-  let progression = generateProgression();
+const createQuestionAnswer = () => {
+  const start = getRandomInt(1, 10);
+  const difference = getRandomInt(1, 10);
+  const length = 5;
 
-  while (progression.length < 5) {
-    progression = generateProgression();
-  }
+  const progression = generateProgression(start, difference, length);
 
   const { progression: question, hiddenElement } = hideElementArr(progression);
 
   return { question, correctAnswer: hiddenElement };
 };
 
-export default () => startGame(gameDescription, gameQuestAnsw);
+export default () => startGame(gameDescription, createQuestionAnswer);
